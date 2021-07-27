@@ -28,3 +28,15 @@ public class Game {
         // create a while loop to enter the guesses
         boolean finish =false;
 
+        while (!finish){
+            for (char ignored : wordArray) {
+                System.out.print("_");
+
+            }
+            System.out.print("\nEnter a letter:\t");
+            String guess =inputDevice.next();
+            //check inputs
+
+
+    }
+}
