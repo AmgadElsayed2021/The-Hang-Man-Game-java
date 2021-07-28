@@ -37,6 +37,21 @@ public class Game {
             String guess =inputDevice.next();
             //check inputs
 
-
-    }
-}
+            while (guess.length()!=1||Character.isDigit(guess.charAt(0))){
+                System.out.println("please enter 1 letter-Try again");
+                guess=inputDevice.next();
+            }
+            //check if the guess in the word or not
+            boolean found =false;
+            for (int i =0;i<wordArray.length;i++) {
+                if (guess.charAt(0) == wordArray[i]) {
+                    playerGuesses[i] = wordArray[i];
+                    found = true;
+                }
+            }
+            // action if the guess is not in the word
+            if(!found){
+                guesses--;
+                System.out.println("Wrong Guess");
+            }
+            }
