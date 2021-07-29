@@ -54,4 +54,13 @@ public class Game {
                 guesses--;
                 System.out.println("Wrong Guess");
             }
+            // create a boolean to check if the user got the right word guessed
+            boolean CorrectGuess =true;
+            for (char playerGuess : playerGuesses) {
+                if (playerGuess == '?') {
+                    System.out.print("_");
+                    CorrectGuess = false;
+                } else {
+                    System.out.print(playerGuess);
+                }
             }
