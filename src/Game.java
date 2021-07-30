@@ -64,3 +64,11 @@ public class Game {
                     System.out.print(playerGuess);
                 }
             }
+            System.out.println("\nGuesses left :"+guesses);
+            drawHangman(guesses);
+            // message to be printed if the player guessed the word
+            if (CorrectGuess){
+                System.out.println("Congrats you did it ");
+                finish=true;
+
+            }
