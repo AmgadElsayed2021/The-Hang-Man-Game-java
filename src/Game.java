@@ -72,3 +72,18 @@ public class Game {
                 finish=true;
 
             }
+            // print the word if guesses =0
+            if (guesses==0){
+                System.out.print("You lost the word is:\t");
+                for (char ignored : wordArray) {
+                    System.out.print(ignored);
+
+                }
+                finish=true;
+
+            }
+
+        }
+
+    }
+
