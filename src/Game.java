@@ -87,3 +87,98 @@ public class Game {
 
     }
 
+    public static void drawHangman(int l) {
+        if(l == 7) {
+            System.out.println("""
+                     |----------
+                     |         |
+                     |
+                     |
+                     |
+                     |
+                     |
+                     ******game created by Amgad******""");
+        }
+        else if(l == 6) {
+            System.out.println("""
+                    |----------
+                    |         |
+                    |         O
+                    |
+                    |
+                    |
+                     ******game created by Amgad******""");
+        }
+        else if(l == 5) {
+            System.out.println("""
+                    |----------
+                    |         |
+                    |         O
+                    |         |
+                    |
+                    |
+                    |
+                    ******game created by Amgad******""");
+
+        }
+        else if(l == 4) {
+            System.out.println("""
+                    |----------
+                    |         |
+                    |         O
+                    |         |/
+                    |
+                    |
+                    |
+                    ******game created by Amgad******""");
+
+        }
+        else if(l == 3) {
+            System.out.println("""
+                    |----------
+                    |         |
+                    |         O
+                    |        \\|/
+                    |
+                    |
+                    |
+                     ******game created by Amgad******""");
+
+        }
+        else if(l == 2) {
+            System.out.println("""
+                    |----------
+                    |         |
+                    |         O
+                    |        \\|/
+                    |         |
+                    |
+                    |
+                    ******game created by Amgad******""");
+
+        }
+        else if (l==1){
+            System.out.println("""
+                    |----------
+                    |         |
+                    |         O
+                    |        \\|/
+                    |         |
+                    |        /
+                    |
+                    ******game created by Amgad******""");
+
+        }
+        else{
+            System.out.println("""
+                    |----------
+                    |         |
+                    |         O
+                    |        \\|/
+                    |         |
+                    |        / \\
+                    |
+                    ******game created by Amgad******""");
+        }
+    }
+}
