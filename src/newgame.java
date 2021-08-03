@@ -2,7 +2,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Game {
+public class newgame {
     public static void main(String[] args) throws Exception {
         Sound.play("src/m3.wav");
         // grab a text file
@@ -31,11 +31,14 @@ public class Game {
             System.out.println("\nthe word consists of "+wordArray.length+" letters");
             for (char ignored : wordArray) {
                 System.out.print("_");
+
             }
             // create a while loop to enter the guesses
             boolean finish = false;
 
             while (!finish) {
+
+
                 System.out.print("\nEnter a letter:\t");
                 String guess = inputDevice.next();
                 //check inputs
@@ -85,15 +88,16 @@ public class Game {
 
                     for (char ignored : wordArray) {
                         System.out.print(ignored);
+
                     }
                     System.out.println();
                     finish = true;
 
                 }
             }
-            System.out.print("\nContinue?(y/n)\t");
+            System.out.print("\nContinue?(yes/no)\t");
             String answer = inputDevice.next();
-            if (!(answer.equals("Y") || answer.equals("y"))) {
+            if (!(answer.equals("yes") || answer.equals("YES") || "Yes".equals(answer))) {
                 Continue = false;
             }
         }System.out.println("\nBye!");
